@@ -1,14 +1,3 @@
-
-next.jsで共通レイアウトファイルにpageheaderコンポーネントをimportしている。
-複数ページでh1タイトルのテキストを設定し、それをpageheaderにあるh1に表示したい場合どうすればいいか。
-
-Next.js の App Router で 親layout を継承しない方法
-https://zenn.dev/leaner_dev/articles/235fd4f98e78d2
-
-
-next.js passing props from page to layout
-
-
 # やること
 - metadata
 - favicon
@@ -190,7 +179,7 @@ export async function generateStaticParams() {
 # LoadingとStreaming
 ## loading.js
 https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming
-page.jsファイルとその下にある子は自動的に境界で囲まれます<Suspense>。
+page.jsファイルとその下にある子は自動的に境界で囲まれます(Suspense)。
 推奨事項とのこと。
 ```ts
 // Suspenseの例
