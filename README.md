@@ -12,6 +12,7 @@ next.js passing props from page to layout
 # やること
 - metadata
 - favicon
+- サイトマップ
 - ページごとのコンポーネント出し分け。ルートグループ？https://nextjs.org/docs/app/building-your-application/routing/route-groups
 - autoprefixer
 - postcssの中身
@@ -140,6 +141,12 @@ export async function getData() {
  ```
  client-onlyもあるみたい。
 
+
+"use client" は Server Component と Client Component の境界につけよう
+
+https://zenn.dev/luvmini511/articles/ec0e874a2cc1f1
+
+use clientは境界となるファイルに一回だけつけるのが良い。use client は、すべてのファイルで定義する必要はありません。クライアント・モジュールの境界は、インポートされたすべてのモジュールがクライアント・コンポーネントとみなされるために、"エントリーポイント "で一度だけ定義する必要があります。
 
  # layout
  - 親レイアウトとその子の間でデータを受け渡すことはできません。
